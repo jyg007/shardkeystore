@@ -1,5 +1,5 @@
 
-# Shared Key store for OSO integration
+# Shard Key store for OSO integration
 
 This code sample is an example how to create a shard key store within OSO if you are considering using an MPC shardkeystore.
 
