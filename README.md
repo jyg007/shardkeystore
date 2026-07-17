@@ -1,12 +1,16 @@
 
+# Shared Key store for OSO integration
+
+This code sample is an example how to create a shard key store within OSO if you are considering using an MPC signer.
+
 ## build/
 
-This directory allows to build bitsigner container
+This directory allows to build the Shard keystore container
 
 
 ## contractgenerator/
 
-This directory contains the signer4mpc contract generator.  Terraform is not required
+This directory contains the shardkeystore contract generator.  Terraform is not required
 
 1/ Edit terraforms.tfvars  
 2/ create_contract_shell.sh creates the contract in install directory
@@ -14,10 +18,10 @@ This directory contains the signer4mpc contract generator.  Terraform is not req
 
 IBM HPVS must be preinsalled as /var/lib/libvirt/images/hpcr.2.2.2
 
-	virsh define domain_signer4mpc.xml  creates the KVM guest.  Adjust network definition in the xml file and network-config if necessary.
+	virsh define domain_shardkeystore.xml  creates the KVM guest.  Adjust network definition in the xml file and network-config if necessary.
 
 	Create a data disk for persistent storage
-	qemu-img create -f qcow2 /var/lib/libvirt/images/signer4mpc-data.qcow2 10G
+	qemu-img create -f qcow2 /var/lib/libvirt/images/shardkeystore-data.qcow2 10G
 
 	create-cloudinit.sh installs the contract
 
