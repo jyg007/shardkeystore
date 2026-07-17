@@ -10,7 +10,8 @@ This directory allows to build the Shard keystore container
 
 ## contractgenerator/
 
-This directory contains the shardkeystore contract generator.  Terraform is not required
+This directory contains the shardkeystore contract generator.  Terraform is not required.
+This allows to test zSecure Execution support in preparation for OSO integration.
 
 1/ Edit terraforms.tfvars  
 2/ create_contract_shell.sh creates the contract in install directory
