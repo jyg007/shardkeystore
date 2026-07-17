@@ -1,7 +1,7 @@
 
 # Shared Key store for OSO integration
 
-This code sample is an example how to create a shard key store within OSO if you are considering using an MPC signer.
+This code sample is an example how to create a shard key store within OSO if you are considering using an MPC shardkeystore.
 
 ## build/
 
@@ -27,13 +27,13 @@ IBM HPVS must be preinsalled as /var/lib/libvirt/images/hpcr.2.2.2
 
 ## dockercompose/
 
-Allows to start the built mpc signer
+Allows to start the built mpc shardkeystore
 
 ## src/
 
-Build mpc signer binary there.
+Build mpc shardkeystore binary there.
 
 ## test/
 
-Tooling for testing the signer.
+Tooling for testing the shardkeystore.
 

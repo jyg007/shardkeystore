@@ -1,6 +1,6 @@
 services:
-  signer4mpc:
-    image: localhost/signer4mpc:latest
+  shardkeystore:
+    image: localhost/shardkeystore:latest
     devices:
       - /dev/z90crypt:/dev/z90crypt
     ports:

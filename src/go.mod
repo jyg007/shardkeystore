@@ -1,4 +1,4 @@
-module signer4mpc
+module shardkeystore
 
 go 1.23.6
 

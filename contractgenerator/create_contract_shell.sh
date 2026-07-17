@@ -9,7 +9,7 @@
 
 . ./terraform.tfvars
 
-HPVSNAME=signer4mpc
+HPVSNAME=shardkeystore
 
 rm -rf ./docker-compose/*
 #terraform apply -auto-approve

@@ -11,8 +11,8 @@
 #
 
 touch vendor-data
-echo "local-hostname: signer4mpc" > meta-data
+echo "local-hostname: shardkeystore" > meta-data
 
-genisoimage -output /var/lib/libvirt/images/signer4mpc-cloudinit -volid cidata -joliet -rock vendor-data user-data meta-data network-config
+genisoimage -output /var/lib/libvirt/images/shardkeystore-cloudinit -volid cidata -joliet -rock vendor-data user-data meta-data network-config
 
-qemu-img create -f qcow2 /var/lib/libvirt/images/signer4mpc-overlay.qcow2 10G
+qemu-img create -f qcow2 /var/lib/libvirt/images/shardkeystore-overlay.qcow2 10G

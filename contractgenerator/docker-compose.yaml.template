@@ -1,5 +1,5 @@
 services:
-  signer4mpc:
+  shardkeystore:
     image: IMAGE
     ports:
       - "4433:4433"
