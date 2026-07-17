@@ -8,7 +8,7 @@ KEY="certs/client.key"
 URL="https://localhost:4433/key"
 
 # Loop to create 200 keys
-for i in $(seq 1 200); do
+for i in $(seq 201 400); do
     PUB="PubKey${i}"
     PRV="PrivKeySecret${i}"
     COIN="BTC"

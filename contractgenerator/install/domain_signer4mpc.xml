@@ -1,5 +1,5 @@
 <domain type='kvm'>
-  <name>bitgosigner</name>
+  <name>signer4mpc</name>
   <uuid>ff5e97ac-6959-4217-a48b-614f5849f172</uuid>
   <memory unit='KiB'>4194304</memory>
   <currentMemory unit='KiB'>4194304</currentMemory>
@@ -17,7 +17,7 @@
     <emulator>/usr/libexec/qemu-kvm</emulator>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2' iommu='on'/>
-      <source file='/var/lib/libvirt/images/bitgosigner-overlay.qcow2'/>
+      <source file='/var/lib/libvirt/images/signer4mpc-overlay.qcow2'/>
       <backingStore type='file'>
         <format type='qcow2'/>
         <source file='/var/lib/libvirt/images/hpcr.2.2.2'/>
@@ -27,17 +27,17 @@
     </disk>
     <disk type='file' device='disk'>
       <driver name='qemu' type='raw' cache='none' io='native' iommu='on'/>
-      <source file='/var/lib/libvirt/images/bitgosigner-cloudinit'/>
+      <source file='/var/lib/libvirt/images/signer4mpc-cloudinit'/>
       <target dev='vdc' bus='virtio'/>
       <readonly/>
       <address type='ccw' cssid='0xfe' ssid='0x0' devno='0x0002'/>
     </disk>
         <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2' iommu='on'/>
-      <source file='/var/lib/libvirt/images/oso/bitgosigner-data.qcow2'/>
+      <source file='/var/lib/libvirt/images/oso/signer4mpc-data.qcow2'/>
       <target dev='vdd' bus='virtio'/>
       <address type='ccw' cssid='0xfe' ssid='0x0' devno='0x0003'/>
-      <serial>bitgosigner_vol</serial>
+      <serial>signer4mpc_vol</serial>
     </disk>
     <controller type='pci' index='0' model='pci-root'/>
     <interface type='network'>

@@ -1,5 +1,5 @@
 services:
-  bitgosigner:
+  signer4mpc:
     image: IMAGE
     ports:
       - "4433:4433"

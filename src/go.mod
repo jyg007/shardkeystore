@@ -1,4 +1,4 @@
-module bitgosigner
+module signer4mpc
 
 go 1.23.6
 

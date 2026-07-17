@@ -28,7 +28,7 @@ import (
 
         "github.com/gorilla/mux"
         _ "github.com/mattn/go-sqlite3"
-        "bitgosigner/ep11"
+        "signer4mpc/ep11"
 )
 
 // ===================== GLOBALS =====================

@@ -1,6 +1,6 @@
 services:
-  bitgosigner:
-    image: localhost/bitgosigner:latest
+  signer4mpc:
+    image: localhost/signer4mpc:latest
     devices:
       - /dev/z90crypt:/dev/z90crypt
     ports:

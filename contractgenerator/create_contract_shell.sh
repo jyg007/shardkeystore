@@ -9,7 +9,7 @@
 
 . ./terraform.tfvars
 
-HPVSNAME=bitgosigner
+HPVSNAME=signer4mpc
 
 rm -rf ./docker-compose/*
 #terraform apply -auto-approve
